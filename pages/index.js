@@ -45,6 +45,7 @@ export default function Home() {
               <li>Choose to buy the program or get the weekly subscription</li>
               <li>Complete your purchase</li>
               <li>Build muscle and crush your goals!</li>
+              <li>WARNING : DOWNLOAD THE EBOOK IMMEDIATELY AFTER PAYMENT, OTHERWISE IT WILL BE LOST FOREVER</li>
             </ol>
           </div>
 
