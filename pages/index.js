@@ -39,13 +39,15 @@ export default function Home() {
           <div style={{ height: 24 }} />
 
           <div className="card">
-            <h3>Comment ça marche</h3>
+            <h3>How It Works</h3>
             <ol>
-              <li>Créer un compte (optionnel).</li>
-              <li>Acheter un ebook ou souscrire à l&apos;abonnement.</li>
-              <li>Télécharger les ebooks depuis l&apos;espace membre.</li>
+              <li>Access the shop</li>
+              <li>Choose to buy the program or get the weekly subscription</li>
+              <li>Complete your purchase</li>
+              <li>Build muscle and crush your goals!</li>
             </ol>
           </div>
+
         </main>
 
         <aside>
