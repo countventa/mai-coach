@@ -52,10 +52,13 @@ export default function Home() {
           <div className="card">
             <h4>À la une</h4>
             <embed
-              src="/Venta_5-7_Workout.pdf"
-              style={{ width: "100%", height: 200 }}
+              src="/Venta_5-7_Workout.pdf#page=1&view=FitH"
               type="application/pdf"
+              width="100%"
+              height="400"
+              style={{ borderRadius: "8px", border: "1px solid #222" }}
             />
+
             <p className="price">15 $ — ou inclus dans l&apos;abonnement</p>
             <div style={{ display: "flex", gap: 8 }}>
               <Link href="/shop" className="button">
