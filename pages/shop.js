@@ -24,7 +24,7 @@ export default function Shop(){
         </div>
       </div>
 
-      <p style={{marginTop:20}}>* Remplace les price IDs par tes vraies valeurs dans les variables d'environnement NEXT_PUBLIC_PRICE_* ou configure via Vercel envs.</p>
+      <p style={{marginTop:20}}>*</p>
     </div>
   )
 }
