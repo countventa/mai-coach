@@ -49,24 +49,35 @@ export default function Home() {
         </main>
 
         <aside>
-         <div className="card">
-          <h4>À la une</h4>
-          <img
-           src="/ebook-preview.jpg"
-           alt="Aperçu de l'ebook Venta 5/7 Workout"
-           style={{ width: "100%", borderRadius: "8px", marginBottom: "12px" }}
-          />
-          <p className="price">15 $ — ou inclus dans l'abonnement</p>
-          <div style={{ display: "flex", gap: 8 }}>
-           <Link href="/shop" className="button">Acheter</Link>
-           <Link href="/subscribe" className="button">S'abonner</Link>
+          <div className="card">
+            <h4>À la une</h4>
+            {/* Aperçu image de la première page du PDF */}
+            <img
+              src="/ebook-preview.jpg"
+              alt="Aperçu de l'ebook Venta 5/7 Workout"
+              style={{
+                width: "100%",
+                borderRadius: "8px",
+                marginBottom: "12px",
+              }}
+            />
+            <p className="price">15 $ — ou inclus dans l&apos;abonnement</p>
+            <div style={{ display: "flex", gap: 8 }}>
+              <Link href="/shop" className="button">
+                Acheter
+              </Link>
+              <Link href="/subscribe" className="button">
+                S&apos;abonner
+              </Link>
+            </div>
           </div>
-         </div>
         </aside>
+      </div>
 
-        <footer>
+      <footer>
         <p>© {new Date().getFullYear()} Mai Coach</p>
       </footer>
     </div>
   );
 }
+
