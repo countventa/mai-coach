@@ -9,7 +9,7 @@ export default function Subscribe(){
         <h3>Abonnement hebdomadaire — 4,99 $/semaine</h3>
         <p>Clique pour payer via Stripe:</p>
         <p><a className="button" href={`/api/create-checkout-session?mode=subscription&price=${process.env.NEXT_PUBLIC_PRICE_SUB_WEEKLY_ID || 'price_yyy'}`}>S'abonner</a></p>
-        <p style={{marginTop:12}}>Après paiement, l'accès aux ebooks sera activé pour le client (webhook à ajouter pour automatiser).</p>
+        <p style={{marginTop:12}}></p>
       </div>
     </div>
   )

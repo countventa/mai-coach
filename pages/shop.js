@@ -24,7 +24,7 @@ export default function Shop(){
         </div>
       </div>
 
-      <p style={{marginTop:20}}>*</p>
+      <p style={{marginTop:20}}></p>
     </div>
   )
 }
