@@ -51,14 +51,13 @@ export default function Home() {
         <aside>
           <div className="card">
             <h4>À la une</h4>
-            <embed
-              src="/Venta_5-7_Workout.pdf#page=1&view=FitH"
-              type="application/pdf"
+            <iframe
+              src="/Venta_5-7_Workout.pdf#page=1&toolbar=0&navpanes=0&scrollbar=0"
               width="100%"
               height="400"
-              style={{ borderRadius: "8px", border: "1px solid #222" }}
+              style={{ border: "none", borderRadius: "8px" }}
+              title="Aperçu PDF - Première page"
             />
-
             <p className="price">15 $ — ou inclus dans l&apos;abonnement</p>
             <div style={{ display: "flex", gap: 8 }}>
               <Link href="/shop" className="button">
