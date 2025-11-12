@@ -49,29 +49,22 @@ export default function Home() {
         </main>
 
         <aside>
-          <div className="card">
-            <h4>À la une</h4>
-            <iframe
-              src="/Venta_5-7_Workout.pdf#page=1&toolbar=0&navpanes=0&scrollbar=0"
-              width="100%"
-              height="400"
-              style={{ border: "none", borderRadius: "8px" }}
-              title="Aperçu PDF - Première page"
-            />
-            <p className="price">15 $ — ou inclus dans l&apos;abonnement</p>
-            <div style={{ display: "flex", gap: 8 }}>
-              <Link href="/shop" className="button">
-                Acheter
-              </Link>
-              <Link href="/subscribe" className="button">
-                S&apos;abonner
-              </Link>
-            </div>
+         <div className="card">
+          <h4>À la une</h4>
+          <img
+           src="/ebook-preview.jpg"
+           alt="Aperçu de l'ebook Venta 5/7 Workout"
+           style={{ width: "100%", borderRadius: "8px", marginBottom: "12px" }}
+          />
+          <p className="price">15 $ — ou inclus dans l'abonnement</p>
+          <div style={{ display: "flex", gap: 8 }}>
+           <Link href="/shop" className="button">Acheter</Link>
+           <Link href="/subscribe" className="button">S'abonner</Link>
           </div>
+         </div>
         </aside>
-      </div>
 
-      <footer>
+        <footer>
         <p>© {new Date().getFullYear()} Mai Coach</p>
       </footer>
     </div>
