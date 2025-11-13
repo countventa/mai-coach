@@ -3,8 +3,10 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="container">
-      <header>
-        <img src="/logo.jpg" alt="Mai Coach logo" />
+      <header style={{ display: "flex", alignItems: "center", gap: 16 }}>
+        <Link href="/">
+          <img src="/logo.jpg" alt="Mai Coach logo" style={{ cursor: "pointer" }} />
+        </Link>
         <div>
           <h1>Mai Coach</h1>
           <p>
@@ -18,8 +20,7 @@ export default function Home() {
           <div className="card">
             <h2>Bienvenue sur Mai Coach</h2>
             <p>
-              Accède au programme <strong>Venta 5/7 Workout</strong> en achat
-              unique (15 $).
+              Accède au programme <strong>Venta 5/7 Workout</strong> en achat unique (15 $).
             </p>
             <div style={{ marginTop: 16 }}>
               <Link href="/shop" className="button">
@@ -45,7 +46,6 @@ export default function Home() {
         <aside>
           <div className="card">
             <h4>À la une</h4>
-            {/* Aperçu image de la première page du PDF */}
             <img
               src="/ebook-preview.jpg"
               alt="Aperçu de l'ebook Venta 5/7 Workout"

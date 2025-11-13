@@ -4,7 +4,9 @@ export default function Shop() {
   return (
     <div className="container">
       <header style={{ display:'flex', alignItems:'center', gap:16 }}>
-        <img src="/logo.jpg" alt="logo" />
+        <Link href="/">
+          <img src="/logo.jpg" alt="logo" style={{ cursor: 'pointer' }} />
+        </Link>
         <h2>Boutique — Ebooks</h2>
       </header>
 
@@ -24,7 +26,7 @@ export default function Shop() {
         </div>
       </div>
 
-      <p style={{marginTop:20}}>⚠️ WARNING : DOWNLOAD THE EBOOK IMMEDIATELY AFTER PAYMENT, OTHERWISE IT WILL BE LOST !</p>
+      <p style={{marginTop:20}}></p>
     </div>
   )
 }
