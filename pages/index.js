@@ -38,7 +38,6 @@ export default function Home() {
               <li>Choose your program and complete your purchase</li>
               <li>Download your ebook instantly after payment</li>
               <li>Build muscle and crush your goals!</li>
-              <li>⚠️ WARNING : DOWNLOAD THE EBOOK IMMEDIATELY AFTER PAYMENT, OTHERWISE IT WILL BE LOST FOREVER</li>
             </ol>
           </div>
         </main>
