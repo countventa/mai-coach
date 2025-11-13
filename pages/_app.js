@@ -1,4 +1,16 @@
 import '../styles/globals.css'
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+import Head from 'next/head'
+
+function MyApp({ Component, pageProps }) {
+  return (
+    <>
+      <Head>
+        <title>Mai Coach</title>
+        <link rel="icon" href="/logo.jpg" />
+      </Head>
+      <Component {...pageProps} />
+    </>
+  )
 }
+
+export default MyApp
