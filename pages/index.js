@@ -8,8 +8,7 @@ export default function Home() {
         <div>
           <h1>Mai Coach</h1>
           <p>
-            Ton espace forme et motivation — ebooks d'entraînement, à l'unité
-            ou en abonnement.
+            Ton espace forme et motivation — ebooks d'entraînement, disponibles à l'unité.
           </p>
         </div>
       </header>
@@ -20,18 +19,11 @@ export default function Home() {
             <h2>Bienvenue sur Mai Coach</h2>
             <p>
               Accède au programme <strong>Venta 5/7 Workout</strong> en achat
-              unique (15 $) ou via abonnement hebdomadaire (4,99 $/semaine).
+              unique (15 $).
             </p>
             <div style={{ marginTop: 16 }}>
               <Link href="/shop" className="button">
                 Voir la boutique
-              </Link>
-              <Link
-                href="/subscribe"
-                className="button"
-                style={{ marginLeft: 8 }}
-              >
-                S&apos;abonner
               </Link>
             </div>
           </div>
@@ -42,13 +34,12 @@ export default function Home() {
             <h3>How It Works</h3>
             <ol>
               <li>Access the shop</li>
-              <li>Choose to buy the program or get the weekly subscription</li>
-              <li>Complete your purchase</li>
+              <li>Choose your program and complete your purchase</li>
+              <li>Download your ebook instantly after payment</li>
               <li>Build muscle and crush your goals!</li>
-              <li>WARNING : DOWNLOAD THE EBOOK IMMEDIATELY AFTER PAYMENT, OTHERWISE IT WILL BE LOST FOREVER</li>
+              <li>⚠️ WARNING : DOWNLOAD THE EBOOK IMMEDIATELY AFTER PAYMENT, OTHERWISE IT WILL BE LOST FOREVER</li>
             </ol>
           </div>
-
         </main>
 
         <aside>
@@ -64,13 +55,10 @@ export default function Home() {
                 marginBottom: "12px",
               }}
             />
-            <p className="price">15 $ — ou inclus dans l&apos;abonnement</p>
+            <p className="price">15 $ — paiement unique</p>
             <div style={{ display: "flex", gap: 8 }}>
               <Link href="/shop" className="button">
                 Acheter
-              </Link>
-              <Link href="/subscribe" className="button">
-                S&apos;abonner
               </Link>
             </div>
           </div>
@@ -83,4 +71,3 @@ export default function Home() {
     </div>
   );
 }
-
