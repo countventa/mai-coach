@@ -26,7 +26,7 @@ export default function Shop() {
         </div>
       </div>
 
-      <p style={{marginTop:20}}></p>
+      <p style={{marginTop:20}}>⚠️ WARNING : DOWNLOAD THE EBOOK IMMEDIATELY AFTER PAYMENT, OTHERWISE IT WILL BE LOST !</p>
     </div>
   )
 }
