@@ -1,7 +1,7 @@
 :root{
-  --bg:#000;
-  --text:#fff;
-  --accent:#06f;
+  --bg:#fff;      /* fond blanc */
+  --text:#000;    /* texte noir */
+  --accent:#000;  /* boutons noirs */
 }
 
 html, body, #__next {
@@ -39,22 +39,26 @@ header img{
 }
 
 .card{
-  background: #0b0b0b;
+  background: #f5f5f5;        /* carte claire */
   padding: 18px;
   border-radius: 8px;
-  border: 1px solid #222;
+  border: 1px solid #ddd;     /* bord gris léger */
 }
 
 button, a.button{
-  background: var(--accent);
+  background: var(--accent);  /* bouton noir */
   border: none;
-  color: #fff;
+  color: #fff;                /* texte blanc */
   padding: 10px 14px;
   border-radius: 6px;
   cursor: pointer;
   text-align: center;
   display: inline-block;
   text-decoration: none;
+}
+
+button:hover, a.button:hover {
+  background: #333;           /* léger gris foncé au hover */
 }
 
 .price{
@@ -64,7 +68,7 @@ button, a.button{
 
 footer{
   margin-top: 48px;
-  color: #999;
+  color: #555;
 }
 
 /* ===== MEDIA QUERIES RESPONSIVE ===== */
@@ -72,7 +76,7 @@ footer{
 /* Tablette */
 @media (max-width: 1024px) {
   .grid {
-    grid-template-columns: 1fr; /* une seule colonne */
+    grid-template-columns: 1fr;
   }
 
   header {
@@ -97,14 +101,15 @@ footer{
   }
 
   button, a.button {
-    width: 100%;           /* bouton plein écran */
-    max-width: 100%;       /* empêche de dépasser */
-    box-sizing: border-box; /* inclut padding dans la largeur */
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
     padding: 12px;
   }
 
   .card {
     padding: 12px;
+    background: #fafafa;
   }
 
   .container {
