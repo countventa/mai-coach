@@ -1,5 +1,6 @@
 import { buffer } from 'micro';
 import Stripe from 'stripe';
+import { supabase } from '@/lib/supabase';
 
 export const config = {
   api: {
@@ -14,41 +15,47 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
 const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET!;
 
 export default async function handler(req: any, res: any) {
-  if (req.method === 'POST') {
-    const buf = await buffer(req);
-    const sig = req.headers['stripe-signature'] as string;
-
-    let event: Stripe.Event;
-
-    try {
-      event = stripe.webhooks.constructEvent(buf, sig, webhookSecret);
-    } catch (err: any) {
-      console.error('Webhook signature verification failed.', err.message);
-      return res.status(400).send(`Webhook Error: ${err.message}`);
-    }
-
-    // ✅ Traite l’événement
-    switch (event.type) {
-      case 'checkout.session.completed':
-        const session = event.data.object as Stripe.Checkout.Session;
-
-        // Récupère l’email du client ou l’identifiant
-        const customerEmail = session.customer_email;
-
-        // TODO: Ici tu ajoutes la logique pour activer l’accès aux ebooks
-        // Par exemple, tu peux appeler ton API ou mettre à jour ta base de données
-        console.log(`Paiement réussi pour ${customerEmail}. Accès aux ebooks activé.`);
-
-        break;
-
-      default:
-        console.log(`Événement non traité : ${event.type}`);
-    }
-
-    res.status(200).json({ received: true });
-  } else {
+  if (req.method !== 'POST') {
     res.setHeader('Allow', 'POST');
-    res.status(405).end('Method Not Allowed');
+    return res.status(405).end('Method Not Allowed');
   }
-}
 
+  const buf = await buffer(req);
+  const sig = req.headers['stripe-signature'] as string;
+
+  let event: Stripe.Event;
+
+  try {
+    event = stripe.webhooks.constructEvent(buf, sig, webhookSecret);
+  } catch (err: any) {
+    console.error('Webhook signature verification failed.', err.message);
+    return res.status(400).send(`Webhook Error: ${err.message}`);
+  }
+
+  if (event.type === 'checkout.session.completed') {
+    const session = event.data.object as Stripe.Checkout.Session;
+
+    const user_id = session.metadata?.supabaseUserId;
+    const product_name = session.metadata?.productName;
+    const pdf_path = session.metadata?.pdfPath;
+
+    if (user_id && product_name && pdf_path) {
+      try {
+        await supabase.from('purchases').insert({
+          user_id,
+          product_name,
+          pdf_path,
+        });
+        console.log(`✅ Achat enregistré pour l’utilisateur ${user_id}`);
+      } catch (err) {
+        console.error('Erreur insertion Supabase :', err);
+      }
+    } else {
+      console.warn('⚠️ Metadata manquante dans le webhook Stripe');
+    }
+  } else {
+    console.log(`Événement Stripe non traité : ${event.type}`);
+  }
+
+  res.status(200).json({ received: true });
+}
