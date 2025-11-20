@@ -33,13 +33,31 @@ export default function Home() {
           <div style={{ height: 24 }} />
 
 
-          {/* ░░░ SECTION 2 : Available Stuff — AJOUTÉE ICI ░░░ */}
+          {/* 🔥 ░░░ SECTION 2 : COMING SOON (NOUVELLE) ░░░ */}
+          <div className="card">
+            <h2>Coming Soon</h2>
+
+            <div className="soon-card">
+              <img
+                src="/65BC2CB7-A342-4A58-B685-D3E8BCD1E122.png"
+                alt="Venta's Cookbook"
+                className="soon-img"
+              />
+
+              <h3 className="soon-title">Venta's Cookbook</h3>
+            </div>
+          </div>
+
+          <div style={{ height: 24 }} />
+
+
+          {/* ░░░ SECTION 3 : Available Stuff ░░░ */}
           <div className="card">
             <h2>Available Stuff</h2>
 
             <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
               <img
-                src="/ebook-preview.jpg"  // ← Change si ton image a un autre nom
+                src="/ebook-preview.jpg"
                 alt="Venta's 5/7 Workout"
                 style={{
                   width: "200px",
@@ -55,7 +73,7 @@ export default function Home() {
           <div style={{ height: 24 }} />
 
 
-          {/* ░░░ SECTION 3 : How It Works ░░░ */}
+          {/* ░░░ SECTION 4 : How It Works ░░░ */}
           <div className="card">
             <h3>How It Works</h3>
             <ol>
