@@ -1,10 +1,9 @@
 import { buffer } from 'micro';
 import Stripe from 'stripe';
-import { supabase } from '@/lib/supabase';
 
 export const config = {
   api: {
-    bodyParser: false, // Stripe nécessite le body brut
+    bodyParser: false,
   },
 };
 
@@ -39,20 +38,7 @@ export default async function handler(req: any, res: any) {
     const product_name = session.metadata?.productName;
     const pdf_path = session.metadata?.pdfPath;
 
-    if (user_id && product_name && pdf_path) {
-      try {
-        await supabase.from('purchases').insert({
-          user_id,
-          product_name,
-          pdf_path,
-        });
-        console.log(`✅ Achat enregistré pour l’utilisateur ${user_id}`);
-      } catch (err) {
-        console.error('Erreur insertion Supabase :', err);
-      }
-    } else {
-      console.warn('⚠️ Metadata manquante dans le webhook Stripe');
-    }
+    console.log(`Achat reçu : user=${user_id}, produit=${product_name}, pdf=${pdf_path}`);
   } else {
     console.log(`Événement Stripe non traité : ${event.type}`);
   }
