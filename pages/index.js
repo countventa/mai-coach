@@ -17,11 +17,12 @@ export default function Home() {
 
       <div className="grid">
         <main>
+          
+          {/* ░░░ SECTION 1 : Bienvenue ░░░ */}
           <div className="card">
             <h2>Bienvenue sur Mai Coach</h2>
-            <p>
-              Accède à la boutique dès maintenant !
-            </p>
+            <p>Accède à la boutique dès maintenant !</p>
+
             <div style={{ marginTop: 16 }}>
               <Link href="/shop" className="button">
                 Voir la boutique
@@ -31,6 +32,30 @@ export default function Home() {
 
           <div style={{ height: 24 }} />
 
+
+          {/* ░░░ SECTION 2 : Available Stuff — AJOUTÉE ICI ░░░ */}
+          <div className="card">
+            <h2>Available Stuff</h2>
+
+            <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+              <img
+                src="/ebook-preview.jpg"  // ← Change si ton image a un autre nom
+                alt="Venta's 5/7 Workout"
+                style={{
+                  width: "200px",
+                  borderRadius: "10px",
+                  marginBottom: "12px",
+                }}
+              />
+
+              <h3>Venta's 5/7 Workout</h3>
+            </div>
+          </div>
+
+          <div style={{ height: 24 }} />
+
+
+          {/* ░░░ SECTION 3 : How It Works ░░░ */}
           <div className="card">
             <h3>How It Works</h3>
             <ol>
