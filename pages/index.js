@@ -20,7 +20,7 @@ export default function Home() {
           <div className="card">
             <h2>Bienvenue sur Mai Coach</h2>
             <p>
-              Accède au programme <strong>Venta 5/7 Workout</strong> en achat unique (15 $).
+              Accède à la boutique dès maintenant !
             </p>
             <div style={{ marginTop: 16 }}>
               <Link href="/shop" className="button">
