@@ -10,7 +10,7 @@ export default function Home() {
         <div>
           <h1>Mai Coach</h1>
           <p>
-            Ton espace forme et motivation — ebooks d'entraînement, disponibles à l'unité.
+            Your fitness and motivation space, training e-books !
           </p>
         </div>
       </header>
@@ -20,12 +20,12 @@ export default function Home() {
           
           {/* ░░░ SECTION 1 : Bienvenue ░░░ */}
           <div className="card">
-            <h2>Bienvenue sur Mai Coach</h2>
-            <p>Accède à la boutique dès maintenant !</p>
+            <h2>Welcome to Mai Coach !</h2>
+            <p>Access the shop now.</p>
 
             <div style={{ marginTop: 16 }}>
               <Link href="/shop" className="button">
-                Voir la boutique
+                Visit the shop
               </Link>
             </div>
           </div>
@@ -87,7 +87,7 @@ export default function Home() {
 
         <aside>
           <div className="card">
-            <h4>À la une</h4>
+            <h4>Featured</h4>
             <img
               src="/ebook-preview.jpg"
               alt="Aperçu de l'ebook Venta 5/7 Workout"
@@ -97,10 +97,10 @@ export default function Home() {
                 marginBottom: "12px",
               }}
             />
-            <p className="price">15 $ — paiement unique</p>
+            <p className="price">14.99 $</p>
             <div style={{ display: "flex", gap: 8 }}>
               <Link href="/shop" className="button">
-                Acheter
+                Buy
               </Link>
             </div>
           </div>
