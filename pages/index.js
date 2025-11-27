@@ -5,19 +5,20 @@ export default function Home() {
     <div className="container">
       <header style={{ display: "flex", alignItems: "center", gap: 16 }}>
         <Link href="/">
-          <img src="/1BDAB43E-0386-44E2-AE67-CE391159B804.png" alt="Mai Coach logo" style={{ cursor: "pointer" }} />
+          <img
+            src="/1BDAB43E-0386-44E2-AE67-CE391159B804.png"
+            alt="Mai Coach logo"
+            style={{ cursor: "pointer" }}
+          />
         </Link>
         <div>
           <h1>Mai Coach</h1>
-          <p>
-            Your fitness and motivation space, training e-books !
-          </p>
+          <p>Your fitness and motivation space, training e-books !</p>
         </div>
       </header>
 
       <div className="grid">
         <main>
-          
           {/* ░░░ SECTION 1 : Bienvenue ░░░ */}
           <div className="card">
             <h2>Welcome to Mai Coach !</h2>
@@ -32,7 +33,6 @@ export default function Home() {
 
           <div style={{ height: 24 }} />
 
-
           {/* 🔥 ░░░ SECTION 2 : COMING SOON (NOUVELLE) ░░░ */}
           <div className="card">
             <h2>Coming Soon</h2>
@@ -43,13 +43,11 @@ export default function Home() {
                 alt="Venta's Cookbook"
                 className="soon-img"
               />
-
               <h3 className="soon-title">Venta's Cookbook</h3>
             </div>
           </div>
 
           <div style={{ height: 24 }} />
-
 
           {/* ░░░ SECTION 3 : Available Stuff ░░░ */}
           <div className="card">
@@ -65,13 +63,18 @@ export default function Home() {
                   marginBottom: "12px",
                 }}
               />
-
               <h3>Venta's 5/7 Workout</h3>
+            </div>
+
+            {/* BOUTON MES CONSEILS AJOUTÉ */}
+            <div style={{ marginTop: "16px" }}>
+              <Link href="/mes-conseils" className="button">
+                Mes conseils
+              </Link>
             </div>
           </div>
 
           <div style={{ height: 24 }} />
-
 
           {/* ░░░ SECTION 4 : How It Works ░░░ */}
           <div className="card">
