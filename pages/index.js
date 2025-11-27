@@ -5,7 +5,7 @@ export default function Home() {
     <div className="container">
       <header style={{ display: "flex", alignItems: "center", gap: 16 }}>
         <Link href="/">
-          <img src="/logo.jpg" alt="Mai Coach logo" style={{ cursor: "pointer" }} />
+          <img src="/1BDAB43E-0386-44E2-AE67-CE391159B804.png" alt="Mai Coach logo" style={{ cursor: "pointer" }} />
         </Link>
         <div>
           <h1>Mai Coach</h1>
