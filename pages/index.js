@@ -3,17 +3,33 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="container">
-      <header style={{ display: "flex", alignItems: "center", gap: 16 }}>
+      {/* HEADER AVEC BOUTON MES CONSEILS */}
+      <header
+        style={{
+          display: "flex",
+          alignItems: "center",
+          gap: 16,
+          justifyContent: "space-between",
+        }}
+      >
         <Link href="/">
           <img
             src="/1BDAB43E-0386-44E2-AE67-CE391159B804.png"
             alt="Mai Coach logo"
-            style={{ cursor: "pointer" }}
+            style={{ cursor: "pointer", height: "50px" }}
           />
         </Link>
-        <div>
+
+        <div style={{ flex: 1, marginLeft: 16 }}>
           <h1>Mai Coach</h1>
           <p>Your fitness and motivation space, training e-books !</p>
+        </div>
+
+        {/* BOUTON MES CONSEILS EN HAUT */}
+        <div>
+          <Link href="/advice" className="button">
+            Advice
+          </Link>
         </div>
       </header>
 
@@ -66,7 +82,7 @@ export default function Home() {
               <h3>Venta's 5/7 Workout</h3>
             </div>
 
-            {/* BOUTON MES CONSEILS AJOUTÉ */}
+            {/* BOUTON MES CONSEILS DANS LA SECTION (optionnel) */}
             <div style={{ marginTop: "16px" }}>
               <Link href="/advice" className="button">
                 Advice
