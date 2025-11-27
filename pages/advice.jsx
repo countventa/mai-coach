@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export default function MesConseils() {
+export default function Advice() {
   return (
     <div style={{ padding: "20px", lineHeight: "1.6" }}>
       
@@ -13,7 +13,7 @@ export default function MesConseils() {
             style={{ cursor: 'pointer', height: 60 }} 
           />
         </Link>
-        <h1>Mes conseils</h1>
+        <h1>Advice</h1>
       </header>
 
       <p>
