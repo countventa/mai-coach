@@ -1,7 +1,20 @@
+import Link from 'next/link';
+
 export default function MesConseils() {
   return (
     <div style={{ padding: "20px", lineHeight: "1.6" }}>
-      <h1>Mes conseils</h1>
+      
+      {/* Logo cliquable vers l'accueil */}
+      <header style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 20 }}>
+        <Link href="/">
+          <img 
+            src="/1BDAB43E-0386-44E2-AE67-CE391159B804.png" 
+            alt="logo" 
+            style={{ cursor: 'pointer', height: 60 }} 
+          />
+        </Link>
+        <h1>Mes conseils</h1>
+      </header>
 
       <p>
         These tips are <strong>personal advice</strong>, meaning they may vary depending on the individual. I’m sharing them to help you out! 😉
