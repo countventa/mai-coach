@@ -68,8 +68,8 @@ export default function Home() {
 
             {/* BOUTON MES CONSEILS AJOUTÉ */}
             <div style={{ marginTop: "16px" }}>
-              <Link href="/mes-conseils" className="button">
-                Mes conseils
+              <Link href="/advice" className="button">
+                Advice
               </Link>
             </div>
           </div>
