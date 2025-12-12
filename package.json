@@ -10,9 +10,9 @@
   "dependencies": {
     "@supabase/supabase-js": "^2.84.0",
     "micro": "^10.0.1",
-    "next": "^16.0.7",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "next": "^16.0.10",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
     "stripe": "12.13.0"
   },
   "devDependencies": {
