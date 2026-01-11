@@ -5,7 +5,15 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        <link rel="apple-touch-icon" href="/apple-touch-icon.PNG"/>
+        {/* Favicon classique pour navigateurs */}
+        <link rel="icon" href="/favicon.ico" />
+
+        {/* Optionnel : Apple touch icon */}
+        <link rel="apple-touch-icon" href="/apple-touch-icon.PNG" />
+
+        {/* Optionnel : favicon en PNG pour navigateurs modernes */}
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
       </Head>
       <body>
         <Main />
