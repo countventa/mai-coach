@@ -5,7 +5,7 @@ export default function Shop() {
     <div className="container">
       <header style={{ display:'flex', alignItems:'center', gap:16 }}>
         <Link href="/">
-          <img src="/1BDAB43E-0386-44E2-AE67-CE391159B804.png" alt="logo" style={{ cursor: 'pointer' }} />
+          <img src="/Logo.PNG" alt="Logo" style={{ cursor: 'pointer' }} />
         </Link>
         <h2>Shop - EBooks</h2>
       </header>
