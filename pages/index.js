@@ -14,7 +14,7 @@ export default function Home() {
       >
         <Link href="/">
           <img
-            src="/1BDAB43E-0386-44E2-AE67-CE391159B804.png"
+            src="/Logo.PNG"
             alt="Mai Coach logo"
             style={{ cursor: "pointer", height: "50px" }}
           />
