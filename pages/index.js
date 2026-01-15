@@ -21,7 +21,7 @@ export default function Home() {
         </Link>
 
         <div style={{ flex: 1, marginLeft: 16 }}>
-          <h1>Mai Coach</h1>
+          <h1>Mai</h1>
           <p>Your fitness and motivation space, training e-books !</p>
         </div>
 
@@ -37,7 +37,7 @@ export default function Home() {
         <main>
           {/* ░░░ SECTION 1 : Bienvenue ░░░ */}
           <div className="card">
-            <h2>Welcome to Mai Coach !</h2>
+            <h2>Welcome to Mai !</h2>
             <p>Access the shop now.</p>
 
             <div style={{ marginTop: 16 }}>
@@ -127,7 +127,7 @@ export default function Home() {
       </div>
 
       <footer>
-        <p>© {new Date().getFullYear()} Mai Coach</p>
+        <p>© {new Date().getFullYear()} Mai</p>
       </footer>
     </div>
   );

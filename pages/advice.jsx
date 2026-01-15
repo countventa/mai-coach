@@ -8,8 +8,8 @@ export default function Advice() {
       <header style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 20 }}>
         <Link href="/">
           <img 
-            src="/1BDAB43E-0386-44E2-AE67-CE391159B804.png" 
-            alt="logo" 
+            src="/Logo.PNG" 
+            alt="Logo" 
             style={{ cursor: 'pointer', height: 60 }} 
           />
         </Link>
