@@ -10,6 +10,11 @@ export default function Shop() {
         <h2>Shop - EBooks</h2>
       </header>
 
+      {/* ⚠️ WARNING déplacé ici */}
+      <p style={{ marginTop: 16, fontWeight: 500 }}>
+        ⚠️ WARNING : DOWNLOAD THE EBOOK IMMEDIATELY AFTER PAYMENT, OTHERWISE IT WILL BE LOST !
+      </p>
+
       <div style={{ display:'grid', gridTemplateColumns:'1fr', gap:18, marginTop:18 }}>
 
         {/* Ebook 1 */}
@@ -20,7 +25,7 @@ export default function Shop() {
             style={{ width: '220px', maxWidth: '100%', borderRadius: 12, marginBottom: 12 }}
           />
           <h3>Venta 5/7 Workout</h3>
-          <p>Complete training program for a 5/7 workout. PDF format.</p>
+          <p>Complete training program. PDF format.</p>
           <p className="price">14.99 $</p>
           <p>
             <a
@@ -40,7 +45,7 @@ export default function Shop() {
             style={{ width: '220px', maxWidth: '100%', borderRadius: 12, marginBottom: 12 }}
           />
           <h3>Venta&apos;s Cookbook</h3>
-          <p>The Mealpreps cookbook. I would add new recipes over time. PDF format.</p>
+          <p>Exclusive cookbook. PDF format.</p>
           <p className="price">19.99 $</p>
           <p>
             <a
@@ -53,10 +58,6 @@ export default function Shop() {
         </div>
 
       </div>
-
-      <p style={{marginTop:20}}>
-        ⚠️ WARNING : DOWNLOAD THE EBOOK IMMEDIATELY AFTER PAYMENT, OTHERWISE IT WILL BE LOST !
-      </p>
     </div>
   )
 }
