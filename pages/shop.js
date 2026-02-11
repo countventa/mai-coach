@@ -31,7 +31,7 @@ export default function Shop() {
         <div className="card">
           <h3>Venta's Cookbook</h3>
           <p>Exclusive cookbook. PDF format.</p>
-          <p className="price">XX.XX $</p>
+          <p className="price">19.99 $</p>
           <p>
             <a
               className="button"
