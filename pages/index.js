@@ -25,7 +25,6 @@ export default function Home() {
           <p>Your fitness and motivation space, training e-books !</p>
         </div>
 
-        {/* BOUTON MES CONSEILS EN HAUT */}
         <div>
           <Link href="/advice" className="button">
             Advice
@@ -49,40 +48,59 @@ export default function Home() {
 
           <div style={{ height: 24 }} />
 
-          {/* 🔥 ░░░ SECTION 2 : COMING SOON (NOUVELLE) ░░░ */}
-          <div className="card">
-            <h2>Coming Soon</h2>
-
-            <div className="soon-card">
-              <img
-                src="/65BC2CB7-A342-4A58-B685-D3E8BCD1E122.png"
-                alt="Venta's Cookbook"
-                className="soon-img"
-              />
-              <h3 className="soon-title">Venta's Cookbook</h3>
-            </div>
-          </div>
-
-          <div style={{ height: 24 }} />
-
-          {/* ░░░ SECTION 3 : Available Stuff ░░░ */}
+          {/* ░░░ SECTION 2 : Available Stuff ░░░ */}
           <div className="card">
             <h2>Available Stuff</h2>
 
-            <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-              <img
-                src="/ebook-preview.jpg"
-                alt="Venta's 5/7 Workout"
-                style={{
-                  width: "200px",
-                  borderRadius: "10px",
-                  marginBottom: "12px",
-                }}
-              />
-              <h3>Venta's 5/7 Workout</h3>
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
+                gap: 16,
+                marginTop: 12,
+              }}
+            >
+              {/* Ebook 1 */}
+              <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+                <img
+                  src="/ebook-preview.jpg"
+                  alt="Venta's 5/7 Workout"
+                  style={{
+                    width: "200px",
+                    borderRadius: "10px",
+                    marginBottom: "12px",
+                  }}
+                />
+                <h3>Venta&apos;s 5/7 Workout</h3>
+                <p className="price">14.99 $</p>
+                <div style={{ marginTop: 10 }}>
+                  <Link href="/shop" className="button">
+                    Buy
+                  </Link>
+                </div>
+              </div>
+
+              {/* Ebook 2 */}
+              <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+                <img
+                  src="/65BC2CB7-A342-4A58-B685-D3E8BCD1E122.png"
+                  alt="Venta's Cookbook"
+                  style={{
+                    width: "200px",
+                    borderRadius: "10px",
+                    marginBottom: "12px",
+                  }}
+                />
+                <h3>Venta&apos;s Cookbook</h3>
+                <p className="price">19.99 $</p>
+                <div style={{ marginTop: 10 }}>
+                  <Link href="/shop" className="button">
+                    Buy
+                  </Link>
+                </div>
+              </div>
             </div>
 
-            {/* BOUTON MES CONSEILS DANS LA SECTION (optionnel) */}
             <div style={{ marginTop: "16px" }}>
               <Link href="/advice" className="button">
                 Advice
@@ -92,7 +110,7 @@ export default function Home() {
 
           <div style={{ height: 24 }} />
 
-          {/* ░░░ SECTION 4 : How It Works ░░░ */}
+          {/* ░░░ SECTION 3 : How It Works ░░░ */}
           <div className="card">
             <h3>How It Works</h3>
             <ol>
@@ -107,20 +125,49 @@ export default function Home() {
         <aside>
           <div className="card">
             <h4>Featured</h4>
-            <img
-              src="/ebook-preview.jpg"
-              alt="Aperçu de l'ebook Venta 5/7 Workout"
-              style={{
-                width: "100%",
-                borderRadius: "8px",
-                marginBottom: "12px",
-              }}
-            />
-            <p className="price">14.99 $</p>
-            <div style={{ display: "flex", gap: 8 }}>
-              <Link href="/shop" className="button">
+
+            {/* Featured Ebook 1 */}
+            <div style={{ marginTop: 12 }}>
+              <img
+                src="/ebook-preview.jpg"
+                alt="Venta's 5/7 Workout"
+                style={{
+                  width: "100%",
+                  borderRadius: "8px",
+                  marginBottom: "10px",
+                }}
+              />
+              <p style={{ margin: 0, fontWeight: 600 }}>Venta&apos;s 5/7 Workout</p>
+              <p className="price" style={{ marginTop: 6 }}>14.99 $</p>
+              <a
+                className="button"
+                href="/api/create-checkout-session?mode=payment&price=price_1SSfRjCJAqOVi5PlLYbjPMRV"
+              >
                 Buy
-              </Link>
+              </a>
+            </div>
+
+            <hr style={{ margin: "16px 0", opacity: 0.2 }} />
+
+            {/* Featured Ebook 2 */}
+            <div>
+              <img
+                src="/65BC2CB7-A342-4A58-B685-D3E8BCD1E122.png"
+                alt="Venta's Cookbook"
+                style={{
+                  width: "100%",
+                  borderRadius: "8px",
+                  marginBottom: "10px",
+                }}
+              />
+              <p style={{ margin: 0, fontWeight: 600 }}>Venta&apos;s Cookbook</p>
+              <p className="price" style={{ marginTop: 6 }}>19.99 $</p>
+              <a
+                className="button"
+                href="/api/create-checkout-session?mode=payment&price=price_1SyuoBCJAqOVi5PlOTzsy1eo"
+              >
+                Buy
+              </a>
             </div>
           </div>
         </aside>
