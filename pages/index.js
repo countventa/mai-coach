@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="container">
-      {/* HEADER AVEC BOUTON MES CONSEILS */}
+      {/* HEADER AVEC BOUTON ADVICE */}
       <header
         style={{
           display: "flex",
@@ -34,7 +34,7 @@ export default function Home() {
 
       <div className="grid">
         <main>
-          {/* ░░░ SECTION 1 : Bienvenue ░░░ */}
+          {/* SECTION 1 */}
           <div className="card">
             <h2>Welcome to Mai !</h2>
             <p>Access the shop now.</p>
@@ -48,7 +48,7 @@ export default function Home() {
 
           <div style={{ height: 24 }} />
 
-          {/* ░░░ SECTION 2 : Available Stuff ░░░ */}
+          {/* SECTION 2 : Available Stuff */}
           <div className="card">
             <h2>Available Stuff</h2>
 
@@ -108,17 +108,11 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
-            <div style={{ marginTop: "16px" }}>
-              <Link href="/advice" className="button">
-                Advice
-              </Link>
-            </div>
           </div>
 
           <div style={{ height: 24 }} />
 
-          {/* ░░░ SECTION 3 : How It Works ░░░ */}
+          {/* SECTION 3 : How It Works */}
           <div className="card">
             <h3>How It Works</h3>
             <ol>
@@ -133,7 +127,6 @@ export default function Home() {
           <div className="card">
             <h4>Featured</h4>
 
-            {/* Featured: seulement le nouvel ebook */}
             <img
               src="/65BC2CB7-A342-4A58-B685-D3E8BCD1E122.png"
               alt="Venta's Cookbook"

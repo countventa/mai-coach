@@ -20,7 +20,7 @@ export default function Shop() {
             style={{ width: '220px', maxWidth: '100%', borderRadius: 12, marginBottom: 12 }}
           />
           <h3>Venta 5/7 Workout</h3>
-          <p>Complete training program. PDF format.</p>
+          <p>Complete training program for a 5/7 workout. PDF format.</p>
           <p className="price">14.99 $</p>
           <p>
             <a
@@ -40,7 +40,7 @@ export default function Shop() {
             style={{ width: '220px', maxWidth: '100%', borderRadius: 12, marginBottom: 12 }}
           />
           <h3>Venta&apos;s Cookbook</h3>
-          <p>Exclusive cookbook. PDF format.</p>
+          <p>The Mealpreps cookbook. I would add new recipes over time. PDF format.</p>
           <p className="price">19.99 $</p>
           <p>
             <a
