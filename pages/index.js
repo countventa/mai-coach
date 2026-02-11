@@ -25,7 +25,7 @@ export default function Home() {
           <p>Your fitness and motivation space, training e-books !</p>
         </div>
 
-        {/* ✅ Advice button + Marlon qui dépasse par le haut */}
+        {/* ✅ Advice button + Marlon qui dépasse par le haut (on voit le haut du corps) */}
         <div style={{ position: "relative", display: "inline-block" }}>
           {/* Marlon au-dessus du bouton (on ne montre que le haut) */}
           <div
@@ -34,9 +34,9 @@ export default function Home() {
               left: "50%",
               transform: "translateX(-50%)",
               bottom: "100%",
-              marginBottom: -12,     // fait "rentrer" un peu Marlon dans le bouton
-              height: 64,            // hauteur visible (coupe le reste)
-              width: 96,
+              marginBottom: -12, // il "rentre" un peu dans le bouton
+              height: 70,        // partie visible
+              width: 110,
               overflow: "hidden",
               zIndex: 1,
               pointerEvents: "none",
@@ -49,8 +49,8 @@ export default function Home() {
                 position: "absolute",
                 left: "50%",
                 transform: "translateX(-50%)",
-                bottom: -8,          // ajuste ce qu'on voit (tête + doigt)
-                height: 160,
+                top: -10,         // ✅ on cadre par le HAUT (tête + doigt)
+                height: 210,
                 width: "auto",
               }}
             />
@@ -96,13 +96,7 @@ export default function Home() {
               }}
             >
               {/* Ebook 1 */}
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "center",
-                }}
-              >
+              <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
                 <img
                   src="/ebook-preview.jpg"
                   alt="Venta's 5/7 Workout"
@@ -126,13 +120,7 @@ export default function Home() {
               </div>
 
               {/* Ebook 2 */}
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "center",
-                }}
-              >
+              <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
                 <img
                   src="/65BC2CB7-A342-4A58-B685-D3E8BCD1E122.png"
                   alt="Venta's Cookbook"
@@ -184,9 +172,7 @@ export default function Home() {
               }}
             />
             <p style={{ margin: 0, fontWeight: 600 }}>Venta&apos;s Cookbook</p>
-            <p className="price" style={{ marginTop: 6 }}>
-              19.99 $
-            </p>
+            <p className="price" style={{ marginTop: 6 }}>19.99 $</p>
 
             <div style={{ display: "flex", gap: 8 }}>
               <a
