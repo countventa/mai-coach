@@ -25,26 +25,19 @@ export default function Home() {
           <p>Your fitness and motivation space, training e-books !</p>
         </div>
 
-        {/* ✅ Advice + Marlon qui dépasse */}
+        {/* ✅ Advice button + Marlon qui dépasse par le haut */}
         <div style={{ position: "relative", display: "inline-block" }}>
-          <Link
-            href="/advice"
-            className="button"
-            style={{ position: "relative", zIndex: 2 }}
-          >
-            Advice
-          </Link>
-
-          {/* Marlon derrière le bouton, on ne voit que le haut */}
+          {/* Marlon au-dessus du bouton (on ne montre que le haut) */}
           <div
             style={{
               position: "absolute",
               left: "50%",
               transform: "translateX(-50%)",
-              bottom: -6,
-              height: 52,          // ✅ hauteur visible (coupe le bas)
-              width: 80,
-              overflow: "hidden",  // ✅ cache le reste du corps
+              bottom: "100%",
+              marginBottom: -12,     // fait "rentrer" un peu Marlon dans le bouton
+              height: 64,            // hauteur visible (coupe le reste)
+              width: 96,
+              overflow: "hidden",
               zIndex: 1,
               pointerEvents: "none",
             }}
@@ -53,11 +46,24 @@ export default function Home() {
               src="/Marlon Inex.PNG"
               alt="Marlon"
               style={{
-                height: 140,        // taille réelle de Marlon
+                position: "absolute",
+                left: "50%",
+                transform: "translateX(-50%)",
+                bottom: -8,          // ajuste ce qu'on voit (tête + doigt)
+                height: 160,
                 width: "auto",
               }}
             />
           </div>
+
+          {/* Bouton */}
+          <Link
+            href="/advice"
+            className="button"
+            style={{ position: "relative", zIndex: 2 }}
+          >
+            Advice
+          </Link>
         </div>
       </header>
 
@@ -90,7 +96,13 @@ export default function Home() {
               }}
             >
               {/* Ebook 1 */}
-              <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                }}
+              >
                 <img
                   src="/ebook-preview.jpg"
                   alt="Venta's 5/7 Workout"
@@ -114,7 +126,13 @@ export default function Home() {
               </div>
 
               {/* Ebook 2 */}
-              <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                }}
+              >
                 <img
                   src="/65BC2CB7-A342-4A58-B685-D3E8BCD1E122.png"
                   alt="Venta's Cookbook"
@@ -166,7 +184,9 @@ export default function Home() {
               }}
             />
             <p style={{ margin: 0, fontWeight: 600 }}>Venta&apos;s Cookbook</p>
-            <p className="price" style={{ marginTop: 6 }}>19.99 $</p>
+            <p className="price" style={{ marginTop: 6 }}>
+              19.99 $
+            </p>
 
             <div style={{ display: "flex", gap: 8 }}>
               <a
