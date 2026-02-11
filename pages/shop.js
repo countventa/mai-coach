@@ -11,6 +11,8 @@ export default function Shop() {
       </header>
 
       <div style={{ display:'grid', gridTemplateColumns:'1fr', gap:18, marginTop:18 }}>
+
+        {/* Ebook 1 */}
         <div className="card">
           <h3>Venta 5/7 Workout</h3>
           <p>Complete training program. PDF format.</p>
@@ -18,15 +20,33 @@ export default function Shop() {
           <p>
             <a
               className="button"
-              href={`/api/create-checkout-session?mode=payment&price=${process.env.NEXT_PUBLIC_PRICE_ONE_TIME_ID || 'price_xxx'}`}
+              href={`/api/create-checkout-session?mode=payment&price=price_1SSfRjCJAqOVi5PlLYbjPMRV`}
             >
               Buy
             </a>
           </p>
         </div>
+
+        {/* Ebook 2 */}
+        <div className="card">
+          <h3>Venta's Cookbook</h3>
+          <p>Exclusive cookbook. PDF format.</p>
+          <p className="price">XX.XX $</p>
+          <p>
+            <a
+              className="button"
+              href={`/api/create-checkout-session?mode=payment&price=price_1SyuoBCJAqOVi5PlOTzsy1eo`}
+            >
+              Buy
+            </a>
+          </p>
+        </div>
+
       </div>
 
-      <p style={{marginTop:20}}>⚠️ WARNING : DOWNLOAD THE EBOOK IMMEDIATELY AFTER PAYMENT, OTHERWISE IT WILL BE LOST !</p>
+      <p style={{marginTop:20}}>
+        ⚠️ WARNING : DOWNLOAD THE EBOOK IMMEDIATELY AFTER PAYMENT, OTHERWISE IT WILL BE LOST !
+      </p>
     </div>
   )
 }
