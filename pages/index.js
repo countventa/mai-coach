@@ -73,10 +73,14 @@ export default function Home() {
                 />
                 <h3>Venta&apos;s 5/7 Workout</h3>
                 <p className="price">14.99 $</p>
+
                 <div style={{ marginTop: 10 }}>
-                  <Link href="/shop" className="button">
+                  <a
+                    className="button"
+                    href="/api/create-checkout-session?mode=payment&price=price_1SSfRjCJAqOVi5PlLYbjPMRV"
+                  >
                     Buy
-                  </Link>
+                  </a>
                 </div>
               </div>
 
@@ -93,10 +97,14 @@ export default function Home() {
                 />
                 <h3>Venta&apos;s Cookbook</h3>
                 <p className="price">19.99 $</p>
+
                 <div style={{ marginTop: 10 }}>
-                  <Link href="/shop" className="button">
+                  <a
+                    className="button"
+                    href="/api/create-checkout-session?mode=payment&price=price_1SyuoBCJAqOVi5PlOTzsy1eo"
+                  >
                     Buy
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
@@ -114,7 +122,6 @@ export default function Home() {
           <div className="card">
             <h3>How It Works</h3>
             <ol>
-              <li>Access the shop</li>
               <li>Choose your program and complete your purchase</li>
               <li>Download your ebook instantly after payment</li>
               <li>Build muscle and crush your goals!</li>
@@ -126,42 +133,20 @@ export default function Home() {
           <div className="card">
             <h4>Featured</h4>
 
-            {/* Featured Ebook 1 */}
-            <div style={{ marginTop: 12 }}>
-              <img
-                src="/ebook-preview.jpg"
-                alt="Venta's 5/7 Workout"
-                style={{
-                  width: "100%",
-                  borderRadius: "8px",
-                  marginBottom: "10px",
-                }}
-              />
-              <p style={{ margin: 0, fontWeight: 600 }}>Venta&apos;s 5/7 Workout</p>
-              <p className="price" style={{ marginTop: 6 }}>14.99 $</p>
-              <a
-                className="button"
-                href="/api/create-checkout-session?mode=payment&price=price_1SSfRjCJAqOVi5PlLYbjPMRV"
-              >
-                Buy
-              </a>
-            </div>
+            {/* Featured: seulement le nouvel ebook */}
+            <img
+              src="/65BC2CB7-A342-4A58-B685-D3E8BCD1E122.png"
+              alt="Venta's Cookbook"
+              style={{
+                width: "100%",
+                borderRadius: "8px",
+                marginBottom: "12px",
+              }}
+            />
+            <p style={{ margin: 0, fontWeight: 600 }}>Venta&apos;s Cookbook</p>
+            <p className="price" style={{ marginTop: 6 }}>19.99 $</p>
 
-            <hr style={{ margin: "16px 0", opacity: 0.2 }} />
-
-            {/* Featured Ebook 2 */}
-            <div>
-              <img
-                src="/65BC2CB7-A342-4A58-B685-D3E8BCD1E122.png"
-                alt="Venta's Cookbook"
-                style={{
-                  width: "100%",
-                  borderRadius: "8px",
-                  marginBottom: "10px",
-                }}
-              />
-              <p style={{ margin: 0, fontWeight: 600 }}>Venta&apos;s Cookbook</p>
-              <p className="price" style={{ marginTop: 6 }}>19.99 $</p>
+            <div style={{ display: "flex", gap: 8 }}>
               <a
                 className="button"
                 href="/api/create-checkout-session?mode=payment&price=price_1SyuoBCJAqOVi5PlOTzsy1eo"
