@@ -24,7 +24,7 @@ function MyApp({ Component, pageProps }) {
       }}>
         <span>© 2026 Mai</span>
 
-        <a href="https://instagram.com/@maicoa.ch" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/maicoa.ch/" target="_blank" rel="noopener noreferrer">
           <FaInstagram size={20} />
         </a>
 
