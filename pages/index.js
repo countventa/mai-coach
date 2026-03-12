@@ -186,9 +186,9 @@ export default function Home() {
         </aside>
       </div>
 
-      <footer>
-        <p>© {new Date().getFullYear()} Mai</p>
-      </footer>
+      
+
+  
     </div>
   );
 }

@@ -24,15 +24,15 @@ function MyApp({ Component, pageProps }) {
       }}>
         <span>© 2026 Mai</span>
 
-        <a href="https://instagram.com/TONCOMPTE" target="_blank" rel="noopener noreferrer">
+        <a href="https://instagram.com/@maicoa.ch" target="_blank" rel="noopener noreferrer">
           <FaInstagram size={20} />
         </a>
 
-        <a href="https://tiktok.com/@TONCOMPTE" target="_blank" rel="noopener noreferrer">
+        <a href="https://tiktok.com/@maicoa.ch" target="_blank" rel="noopener noreferrer">
           <FaTiktok size={20} />
         </a>
 
-        <a href="https://youtube.com/@TONCOMPTE" target="_blank" rel="noopener noreferrer">
+        <a href="https://youtube.com/@maicoach" target="_blank" rel="noopener noreferrer">
           <FaYoutube size={20} />
         </a>
 
