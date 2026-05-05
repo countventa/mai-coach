@@ -1,6 +1,6 @@
 import '../styles/globals.css'
 import Head from 'next/head'
-import { FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa";
+import { FaInstagram, FaTiktok, FaYoutube, FaEnvelope } from "react-icons/fa";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -24,18 +24,21 @@ function MyApp({ Component, pageProps }) {
       }}>
         <span>© 2026 Mai</span>
 
-        <a href="https://www.instagram.com/maicoa.ch/" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/maicoa.ch/" target="_blank" rel="noopener noreferrer" style={{ color: "#000" }}>
           <FaInstagram size={20} />
         </a>
 
-        <a href="https://tiktok.com/@maicoa.ch" target="_blank" rel="noopener noreferrer">
+        <a href="https://tiktok.com/@maicoa.ch" target="_blank" rel="noopener noreferrer" style={{ color: "#000" }}>
           <FaTiktok size={20} />
         </a>
 
-        <a href="https://youtube.com/@maicoach" target="_blank" rel="noopener noreferrer">
+        <a href="https://youtube.com/@maicoach" target="_blank" rel="noopener noreferrer" style={{ color: "#000" }}>
           <FaYoutube size={20} />
         </a>
 
+        <a href="mailto:getmaicoach@gmail.com" style={{ color: "#000" }}>
+          <FaEnvelope size={20} />
+        </a>
       </footer>
     </>
   )
