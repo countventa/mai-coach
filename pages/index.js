@@ -25,17 +25,16 @@ export default function Home() {
           <p>Your fitness and motivation space, training e-books !</p>
         </div>
 
-        {/* ✅ Advice button + Marlon qui dépasse par le haut (on voit le haut du corps) */}
+        {/* Advice button + Marlon qui dépasse par le haut */}
         <div style={{ position: "relative", display: "inline-block" }}>
-          {/* Marlon au-dessus du bouton (on ne montre que le haut) */}
           <div
             style={{
               position: "absolute",
               left: "50%",
               transform: "translateX(-50%)",
               bottom: "100%",
-              marginBottom: -12, // il "rentre" un peu dans le bouton
-              height: 70,        // partie visible
+              marginBottom: -12,
+              height: 70,
               width: 110,
               overflow: "hidden",
               zIndex: 1,
@@ -49,14 +48,13 @@ export default function Home() {
                 position: "absolute",
                 left: "50%",
                 transform: "translateX(-50%)",
-                top: -10,         // ✅ on cadre par le HAUT (tête + doigt)
+                top: -10,
                 height: 210,
                 width: "auto",
               }}
             />
           </div>
 
-          {/* Bouton */}
           <Link
             href="/advice"
             className="button"
@@ -156,6 +154,60 @@ export default function Home() {
               <li>Build muscle and crush your goals!</li>
             </ol>
           </div>
+
+          <div style={{ height: 24 }} />
+
+          {/* SECTION 4 : Available Soon */}
+          <div className="card">
+            <h2>Coming Soon 🔒</h2>
+
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                marginTop: 12,
+              }}
+            >
+              <div style={{ position: "relative", display: "inline-block" }}>
+                <img
+                  src="/MRLWK.png"
+                  alt="Marlon's Workout"
+                  style={{
+                    width: "200px",
+                    borderRadius: "10px",
+                    marginBottom: "12px",
+                    filter: "brightness(0.45) blur(1px)",
+                  }}
+                />
+                {/* Badge "Available Soon" par-dessus l'image */}
+                <div
+                  style={{
+                    position: "absolute",
+                    top: "50%",
+                    left: "50%",
+                    transform: "translate(-50%, -50%)",
+                    backgroundColor: "rgba(0,0,0,0.75)",
+                    color: "#fff",
+                    padding: "8px 14px",
+                    borderRadius: "8px",
+                    fontWeight: 700,
+                    fontSize: "14px",
+                    textAlign: "center",
+                    whiteSpace: "nowrap",
+                    border: "1px solid rgba(255,255,255,0.3)",
+                  }}
+                >
+                  🕐 Available Soon
+                </div>
+              </div>
+
+              <h3>Marlon&apos;s Workout</h3>
+              <p style={{ color: "#888", fontSize: "13px", marginTop: 4 }}>
+                Stay tuned — something big is coming.
+              </p>
+            </div>
+          </div>
         </main>
 
         <aside>
@@ -185,10 +237,6 @@ export default function Home() {
           </div>
         </aside>
       </div>
-
-      
-
-  
     </div>
   );
 }
