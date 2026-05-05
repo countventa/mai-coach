@@ -230,7 +230,7 @@ export default function Home() {
                     width: "200px",
                     borderRadius: "10px",
                     marginBottom: "12px",
-                    filter: "brightness(0.45) blur(1px)",
+                    filter: "brightness(0.45) blur(0.5px)",
                   }}
                 />
                 <div
